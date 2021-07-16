@@ -1,242 +1,234 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Hassan Ali</title>
     <style>
-
+        body{
+            margin:0%;
+            
+        }
         body::after {
             content: '';
             display: table-cell;
             clear: both;
         }
-        
-        .line{
-            background-color: #ff9924;
-            height: 100%;
-            position: fixed;
-            float: left;
-            width: 5px;
+        .outer, .outer p{
+            padding-left: 2%;
+            padding-right: 2%;
+            text-align: center;
         }
-        .box{
-            background-color: #ff9924;
-            height: 100%;
-            position: fixed;
-            right: 0px;
-            width: 20%;
-        }
-        #work{
-            font-style: italic;
-        }
-        .sub p{
-            font-size: 10px;
-        }
-        .sidebar{
-            font-size: 90%;
-            color: floralwhite;
-            margin-left: 0.5%;
-            padding: 0.5%;
-            position: fixed;
-            width: 12%;
-            height: 100%;
-            background-color: grey;
-        }
-         
-        .sidebar>img{
-            margin-left: 8%;
-        }
+        .content{
+            background-color: #173e43;
 
-        .sidebar sub p{
-           font-size: 90%;
         }
-
-        #top,#obj,#edu,#cor,#we,#sk,#hob{
-            border: 4px solid #ff9924;
-            border-style: solid;
-            padding: 0em;
-            border-radius: 10px;
-            box-sizing: border-box;
+        .outer{
+            background-color: #f2f2f2;
+            display: flex;
+            color: #173e43;            
         }
-        #top{
-           width: 210PX; 
+    
+        .social img {
+            display: flex;
+           
+            width: 50%;
+            height: 30%;
+            margin:  2px 2px 2px 2px;
+            text-align: center;
         }
-        #obj{
-            width: 112PX; 
-        }
-        #edu{
-            width: 120px;
-        }
-        #cor{
-            width: 96px;
-        }
-        #we{
-            width: 225px;
-        }
-        #sk{
-            width: 70px;
-        }
-        #hob{
-            width: 217px;
-        }
-        .subtext.coll, .subtext, #top,#obj,#edu,#cor,#we,#sk,#hob, .back, footer{
-            margin-left:17%;
+        .back{
+            padding-top: 2%;
+            padding-bottom: 5%;
         }
         img{
-            
-            border-radius: 25px; 
-            position: center;
-            border: 6px solid #ff9924;
+
+            border-radius: 15%; 
+            border: 5px solid #3fb0ac;
             background-color: white;
         }
-        
-        
-        div,footer{
-            font-family: Alternate Gothic;
-            font-size: 17px;
-            width: 1000px;
-            color: black;
-            text-align: justify;
+        .photo img{
+            text-align: center;
+            padding-top: 0;
+            display: flex;
+            width: 40%;
+            max-width: max-content;
+            overflow: hidden;
+            margin:  1% 1% 1% 1%;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
         }
-        footer{
-            background-color: rgb(247, 201, 117);
-            background-size: auto;
-            padding-top: 2px;
-            padding-bottom: 3px;
+        
+        .name{
+            padding-top: 1%;
+            font-size: 150%;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .job{
+            font-size: 130%;
+            font-style: italic;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+         .ph, #loc, .mail, .obj{
+            font-size: 100%;
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
-            width: 60%;
+            display: flexbox;
         }
-        li, p, pre{
-            font-size: 20px;
+        
+        hr.rounded {
+            width: 1px solid white;
+            border-radius: 1px;
         }
-        #ph{
+      .content{
+            
             color: floralwhite;
-            width: 14%;
+            overflow: hidden;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-        a:link, a:visited{color: black;}
-        .sub a:link{
-            color: white;
+        a:link, a:visited{
+            text-decoration: none;
+            color: black;
         }
-        .sub a:visited{
-            color: white;
+        a:hover{
+            font-size: 110%;
         }
-        .sub > ul, .sub{
-            color: white;
+        .content .subtext, .content .subtextcol{
+            background-color: white;
+            padding: 2%;
+            color: black;
+            border-radius: 10px;
+            font-size: 100%;
         }
-        .subtext,.subtext.coll{
-            width: 60%;
+        footer, footer a:link,footer a:visited{
+            background-color: #173e43;
+            font-weight: bolder;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            text-align: justify;
+            width: 100%;
+            color: blanchedalmond;
         }
-        h4{
-            line-height: 0.2;
+        
+        .content{
+            text-align: center;
+            width: 80%;
+            position: relative;
+            padding-right: 10%;
+            padding-left: 10%;
         }
+        #heading{
+            font-size: 150%;
+            font-weight: bolder;
+            border-color: cornsilk;
+            border-style: solid;
+            border-radius: 10px;
+            border-width: thick;
+            box-sizing: content-box;
+            padding: 1%;
+            box-sizing: border-box;
+            width:max-content;
+        }
+        h1{
+            font-size: 170%;
+        }
+        ul, ol{
+            list-style-type: none;
+            padding: 0;
+        }
+      
     </style>
-</head>
+  </head>
+  <body>
 
-<body>
-    <div class="line"></div>
-    <div class="box"></div>
-    <div class="sidebar">
-        <div class="image"><img src="cv.png" alt="image of dev" width="17%"></div>
-        <h2 id="name">HASSAN ALI</h2>
-        <h2 id="work">Frontend Developer</h2>
 
-        <h2 id="con">
-            <div class="side"></div><span>Contact Me</span></h2>
-        
-        <h2><div class="sub">
-            <h3 style=text-align:justify>Phone 03204148563</h3>
-                <div><a href="mailto: hassanali202456@gmail.com"><span>E-mail</span></a></div>
-        </div></h2> 
-        <h2 id="add">
-            <div class = "sub"></div><span>Address</span>
-        </h2>
-        <div class = "sub">
-            <h3 style=text-align:justify>Lahore, Pakistan</h3>
-        </div></h2>
-        <h2 id="sm">
-            <div class="sub"></div><span>Socials</span></h2>
-        <div class="sub"> 
-            <a href ="https://www.linkedin.com/in/hassanalirahmat" target="_blank"><img src="lin.png" width="3.4%" height="3.4%"></a>
-            <a href="https://www.facebook.com/HassanAliRahmat" target="_blank"><img src="fb.png" width="3.4%" height="3.4%"></a> 
-            <a href="https://www.instagram.com/hassanistic._/" target="_blank"><img src="ins.png" width="3.4%" height="3.4%"></a>
-            <a href="https://wa.me/923204148563" target="_blank"><img src="wa.png" width="3.4%" height="3.4%"></a>
-        </div>
-    </div>
-         
-    
-        <h1 id="top">
-            <div class="hex"></div><span>About the Dev</span></h1>
-        <div class="subtext" id="main">
-            <p style=text-align:justify"> The name's Hassan Ali. I'm a 19-year-old Pakistani, Computer Science student and a Frontend Developer.</p>
-            <p style=text-align:justify"> I wanted to be an engineer for most of my life. By the time I changed my mind about that, my liaison with the applied sciences had drastically altered my worldview already. This still informs much of my work and work ethic - Frontend Development is no less of a science in my eyes than physics or computing.</p>
-        </div>
-        <h2 id="obj">
-            <div class="hex"></div><span>Objective</span></h2>
-        <div class="subtext coll">
-            <p style=text-align:justify"> Seeking challenging opportunity and an
-            environment to explore and fine tune my creative
-            talent by learning new things and contributing the
-            best of skills and abilities with having
-            approximately 4 years of experience equipped
-            with records of success in academic and
-            professional grounds.</p>
+    <div class="outer">
+        <div id="top"></div>
+        <div class="left-sidebar">
+            <div class="photo">
+                <img src="cv.png" alt="image of dev">
+            </div>
+            <div class="name"><span>Hassan Ali</span></div>
+            <div class="job"><span>Frontend Developer</span></div>
+            <div class="obj"><p> Seeking challenging opportunity and an environment to explore and fine tune my creative talent by learning new things and contributing the 
+                best of skills and abilities with having approximately 2 years of experience equipped with records of success in academic and professional grounds.</div>
+            </p> 
+            
+            
 
-        </div>
-        <h2 id="edu">
-            <div class = "hex"></div><span>Education</span>
-        </h2>
-        <div class="subtext coll">
-            <ul>
-                <li>I passed my Matric from The Royal Cambridge School System in the batch 2015-17/</li>
-                <li>I passed my ICS-Physics from The Superior Group of Colleges in the batch 2017-19. I enjoyed a full fee scholarship at The Superior.</li>
-                <li>I am currently enrolled in BSCS at the Punjab University Lahore - Faculty of Computer and Information Technology in the batch Fall 19.</li>
-            </ul>
-        </div>
-        <h2 id="cor">
-            <div class="hex"></div><span>Courses</span>
-        </h2>
-        <div class="subtext coll">
-            <ul>
-                <li><a href="https://www.coursera.org/account/accomplishments/verify/E9HYQ6RQ8QNL" target="_blank">C for Everyone: Programming Fundamentals. </a></li>
-                <li><a href="https://coursera.org/share/f235051fcb3e3359c7852b4d94836776" target="_blank">Write Professional Emails in English. </a></li>
-            </ul>
-        </div>
-        <h2 id="we">
-            <div class="hex"></div><span>Working Experience</span>
-        </h2>
-        <div class="subtext coll">
-            <ol>
-                <li>I have been working as a Lecturer at The Royal Cambridge School System Lahore, teaching Matric Students since February 2020.</li>
-                <li>I have been working as a Lecturer at Kanz-Ul-Iman Science Academy Lahore, teaching Mathematics and Computer scince to Intermediate students since May 2021.</li>
-                </ol>
+            
+            <div class="ph"><span>+92320-4148563</span></div>
+            <div class="mail">hassanali202456@gmail.com</span></div>
+            
+            <div id="loc"><span>Lahore, Pakistan</span></div>
+            <div class="soc">
+                <a href ="https://www.linkedin.com/in/hassanalirahmat" target="_blank"><img src="lin.png" width="3.2%" height="3.2%"></a>
+                <a href="https://www.facebook.com/HassanAliRahmat" target="_blank"><img src="fb.png" width="3.2%" height="3.2%"></a> 
+                <a href="https://www.instagram.com/hassanistic._/" target="_blank"><img src="ins.png" width="3.2%" height="3.2%"></a>
+                <a href="https://wa.me/923204148563" target="_blank"><img src="wa.png" width="3.2%" height="3.2%"></a>
                 </div>
-        <h2 id="sk">
-            <div class="hex"></div><span>Skills</span></h2>
-        <div class="subtext coll">
-            <p style=text-align:justify"> A good grasp of Fundamental and object-oriented programming with C and C++. Proficient in CSS3 and HTML5; making significant inroads into JavaScript, JQuery, ReachtJs and AngularJS. Programming is both enjoyable for me and putty in my hands. I'm skilled user of MS-Office. I am good at teamwork as well as creative tasks. In addition to my knowledge of coding, I also speak three human languages Including English (Professional&nbsp;working&nbsp;proficiency), Urdu and Punjabi (Native/Bilingual&nbsp;proficiency).</p>
         </div>
-        <h2 id="hob">
-            <div class="hex"></div><span>Hobbies & Interests</span></h2>
-        <div class="subtext coll">
-            <ul>
-                <li>Small indie coding projects (semi-professionally)</li> 
-                <li>Music (unprofessionally)</li> 
-                <li>Social Media (In leisure)</li> 
-                <li>Islamic Education (religiously)</li> 
-                <li>Debating (comprehensively)</li>
-            </ul>
         </div>
-        
-<div class="back">
-    <a href="#top"><img src="up.png" width="20" height="20" aria-label="back to top"></a>
+        <hr class="rounded">
+        <div class="content">
+            <h1 id="heading">About the Dev</h1>
+            <div class="subtext"><p>The name's Hassan Ali. I'm a 19-year-old Pakistani, Computer Science student and a Frontend Developer. I wanted to be an engineer for most 
+                of my life. By the time I changed my mind about that, my liaison with the applied sciences had drastically altered my worldview already. This still informs 
+                much of my work and work ethic - Frontend Development is no less of a science in my eyes than physics or computing.</p>
+            </div>
+            
+            <h2 id="heading">Education</h2>
+            <div class="subtextcol">
+                <ul>
+                    <li>I passed my Matric from The Royal Cambridge School System in the batch 2015-17/</li>
+                    <li>I passed my ICS-Physics from The Superior Group of Colleges in the batch 2017-19. I enjoyed a full fee scholarship at The Superior.</li>
+                    <li>I am currently enrolled in BSCS at the Punjab University Lahore - Faculty of Computer and Information Technology in the batch Fall 19.</li>
+                </ul>
+            </div>
+            <h2 id="heading">Courses</h2>
+            <div class="subtextcol">
+                <ul>
+                    <li><a href="https://www.coursera.org/account/accomplishments/verify/E9HYQ6RQ8QNL" target="_blank">C for Everyone: Programming Fundamentals. </a></li>
+                    <li><a href="https://coursera.org/share/f235051fcb3e3359c7852b4d94836776" target="_blank">Write Professional Emails in English. </a></li>
+                </ul>
+                </div>
+            
+      
+        <h2 id="heading">Professional Career</h2>
+            <div class="subtextcol">
+                <ol>
+                    <li>I have been working as a Lecturer at The Royal Cambridge School System Lahore, teaching Matric Students since February 2020.</li>
+                    <li>I have been working as a Lecturer at Kanz-Ul-Iman Science Academy Lahore, teaching Mathematics and Computer scince to Intermediate students since May 2021.</li>
+                    </ol>
+    </div>
+    <h2 id="heading">Skills</h2>
+    <div class="subtextcol">A good grasp of Fundamental and object-oriented programming with C and C++. Proficient in CSS3 and HTML5; making significant inroads into 
+        JavaScript, JQuery, ReachtJs and AngularJS. Programming is both enjoyable for me and putty in my hands. I'm skilled user of MS-Office. I am good at teamwork as well 
+        as creative tasks. In addition to my knowledge of coding, I also speak three human languages Including English (Professional working proficiency), Urdu 
+        and Punjabi (Native/Bilingual proficiency).</p>
+    </div>
+    <h2 id="heading">Hobbies 'n' Interests</h2>
+    <div class="subtextcol">
+        <ul>
+            <li>Small indie coding projects (semi-professionally)</li> 
+            <li>Music (unprofessionally)</li> 
+            <li>Social Media (In leisure)</li> 
+            <li>Islamic Education (religiously)</li> 
+            <li>Debating (comprehensively)</li>
+        </ul>
+    </div>
+    <div class="back">
+        <a href="#top" id="up"><img src="up.png" width="3.2%" height="3.2%" aria-label="back to top"></a>
+   </div>
 </div>
-  
-</body>
 <footer>
-    <h3>Developed by Hassan Ali</h3>
-    <H5>92320-4148563 | hassanali202456@gmail.com</H5>   
-    </pre>
+    <pre>
+        Developed by: Hassan Ali</pre>
+        <pre>
+            0320-4148563 | <a href="mailto: hassanali202456@gmail.com" target="_blank">Email</a>
+        </pre>
 </footer>
+</body>
 </html>
